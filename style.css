@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+main {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  align-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 250px 300px;
+  grid-template-areas:
+    "content1 content1"
+    "content2 content3";
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content-1 {
+  grid-area: content1;
+  background-color: white;
+  padding: 40px;
+}
+
+.content-1 h2 {
+  font-size: 26px;
+  color: hsl(179, 86%, 43%);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.content-1 h3 {
+  color: hsl(71, 73%, 54%);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.content-1 p {
+  color: hsl(218, 22%, 67%);
+  font-size: 18px;
+  margin-right: 120px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.content-2 {
+  grid-area: content2;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.content-3 {
+  grid-area: content3;
+  background-color: hsl(180, 53%, 64%);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
