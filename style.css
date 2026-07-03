@@ -9,15 +9,23 @@
 
 body {
   background-color: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
   width: 100%;
   max-width: 750px;
-  margin: 0 auto;
   padding: 20px;
-  height: 100vh;
-  align-content: center;
+
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-container {
@@ -69,7 +77,7 @@ main {
   margin-bottom: 25px;
 }
 
-.content-2 h1 {
+.content-2 .price {
   color: white;
   display: flex;
   align-items: center;
@@ -78,7 +86,7 @@ main {
   margin-bottom: 10px;
 }
 
-.content-2 h1 span {
+.content-2 .price span {
   color: hsla(203, 44%, 93%, 0.516);
   font-size: 19px;
   font-weight: 300;
@@ -91,12 +99,7 @@ main {
   margin-bottom: 34px;
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-}
-
-.btn-container button {
+.content-2 button {
   width: 100%;
   padding: 16px 0;
   border-radius: 7px;
@@ -107,9 +110,10 @@ main {
   color: white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
-.btn-container button:hover {
+.content-2 button:hover {
   background-color: hsl(71, 63%, 52%);
 }
 
@@ -119,7 +123,7 @@ main {
   padding: 40px 45px;
 }
 
-.content-3 h1 {
+.content-3 h3 {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.883);
   margin-bottom: 20px;
