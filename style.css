@@ -13,7 +13,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 850px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 20px;
   height: 100vh;
@@ -23,12 +23,12 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 250px 300px;
   grid-template-areas:
     "content1 content1"
     "content2 content3";
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .content-1 {
@@ -38,8 +38,8 @@ main {
 }
 
 .content-1 h2 {
-  font-size: 26px;
-  color: hsl(179, 86%, 43%);
+  font-size: 28px;
+  color: hsl(179, 94%, 35%);
   margin-bottom: 25px;
   font-weight: 700;
 }
@@ -53,7 +53,7 @@ main {
 .content-1 p {
   color: hsl(218, 22%, 67%);
   font-size: 18px;
-  margin-right: 120px;
+  margin-right: 20px;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -61,17 +61,84 @@ main {
 .content-2 {
   grid-area: content2;
   background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+}
+
+.content-2 h3 {
+  color: rgba(255, 255, 255, 0.885);
+  margin-bottom: 25px;
+}
+
+.content-2 h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.content-2 h1 span {
+  color: hsla(203, 44%, 93%, 0.516);
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.content-2 h4 {
+  color: rgba(255, 255, 255, 0.885);
+  font-weight: 300;
+  font-size: 19px;
+  margin-bottom: 34px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container button {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 7px;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background-color: hsl(71, 63%, 52%);
 }
 
 .content-3 {
   grid-area: content3;
-  background-color: hsl(180, 53%, 64%);
+  background-color: hsl(180, 36%, 56%);
+  padding: 40px 45px;
+}
+
+.content-3 h1 {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.883);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.content-3 p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.549);
+  margin-right: 50px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
