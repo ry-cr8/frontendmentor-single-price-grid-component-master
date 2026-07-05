@@ -44,6 +44,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
+<<<<<<< HEAD
+=======
+
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
+>>>>>>> 6b0a3478417bcb6c306ff1da7e9e2d50c5c2efba
 
 ### What I learned
 
@@ -51,6 +56,23 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
+<<<<<<< HEAD
+=======
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+```
+
+>>>>>>> 6b0a3478417bcb6c306ff1da7e9e2d50c5c2efba
 ### AI Collaboration
 
 Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
