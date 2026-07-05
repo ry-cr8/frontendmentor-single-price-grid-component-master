@@ -44,12 +44,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-  <<<<<<< HEAD
-  =======
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-> > > > > > > 6b0a3478417bcb6c306ff1da7e9e2d50c5c2efba
 
 ### What I learned
 
