@@ -57,14 +57,6 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
 ## Author
 
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
