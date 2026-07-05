@@ -130,12 +130,23 @@ main {
   font-weight: 500;
 }
 
-.content-3 p {
+.content-3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
   font-size: 17px;
-  color: rgba(255, 255, 255, 0.549);
-  margin-right: 50px;
+  color: rgba(255, 255, 255, 0.55);
   font-weight: 300;
   line-height: 1.5;
+}
+
+.content-3 li {
+  margin-bottom: 4px;
+}
+
+.content-3 li:last-child {
+  margin-bottom: 0;
 }
 
 .attribution {
@@ -145,4 +156,108 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content1"
+      "content2"
+      "content3";
+  }
+
+  .content-1,
+  .content-2,
+  .content-3 {
+    padding: 32px;
+  }
+
+  .content-1 h2 {
+    font-size: 24px;
+  }
+
+  .content-1 h3,
+  .content-2 h3,
+  .content-3 h3 {
+    font-size: 20px;
+  }
+
+  .content-1 p,
+  .content-3 p,
+  .content-2 h4 {
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  .content-2 .price {
+    font-size: 34px;
+  }
+
+  .content-2 .price span {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 0;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  .content-1,
+  .content-2,
+  .content-3 {
+    padding: 24px;
+  }
+
+  .content-1 h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .content-1 h3 {
+    font-size: 18px;
+  }
+
+  .content-1 p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .content-2 h3,
+  .content-3 h3 {
+    font-size: 18px;
+  }
+
+  .content-2 .price {
+    font-size: 30px;
+    gap: 10px;
+  }
+
+  .content-2 .price span {
+    font-size: 16px;
+  }
+
+  .content-2 h4,
+  .content-3 p {
+    font-size: 15px;
+  }
+
+  .content-2 button {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .content-3 p {
+    margin-right: 0;
+  }
 }
